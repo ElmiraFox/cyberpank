@@ -233,7 +233,7 @@ img {
 .about__images-col-left {
   display: flex;
   gap: 32px;
-  flex-direction: row;
+  flex-direction: column;
 }
 @media (max-width: 480px) {
   .about__images-col-left {
