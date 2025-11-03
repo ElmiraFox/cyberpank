@@ -5,8 +5,14 @@
         @include flex-col($gap: 32px);
     }
 
+    &__image {
+        width: 944px;
+        height: 717px;
+        background: url(../img/propose/games-img.jpg);
+    }
+
     &__content-texts {
-        padding: 70px 0;
+        padding: 50px 0;
     }
 
     &__title {
@@ -56,7 +62,7 @@
             margin-right: 10px;
         }
 
-                &:nth-child(2)::before {
+        &:nth-child(2)::before {
             content: "";
             display: inline-block;
             width: 32px;
@@ -65,7 +71,7 @@
             margin-right: 10px;
         }
 
-                &:last-child::before {
+        &:last-child::before {
             content: "";
             display: inline-block;
             width: 32px;
@@ -89,5 +95,13 @@
         grid-template-rows: repeat(2, auto);
         gap: 40px;
         max-width: 319px;
+    }
+
+    @media (max-width: 1024px) {
+        &__image {
+            width: 322px;
+            height: 717px;
+            background: url(../img/propose/tablet/games-img.jpg);
+        }
     }
 }
