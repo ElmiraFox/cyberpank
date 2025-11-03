@@ -1,0 +1,55 @@
+.hero {
+    position: relative;
+
+    &__slide {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 1000px;
+        width: 100%;
+    }
+
+    &__content {
+        @include image-pol;
+        position: absolute;
+        bottom: 0;
+        right: calc((100vw - 1280px) / 2);
+        max-width: 624px;
+        width: 100%;
+        min-height: 369px;
+        background-color: $dark-yell;
+        z-index: 10;
+        padding: 70px;
+        outline: 1px solid $dark;
+        outline-offset: -1px;
+        border-radius: 0;
+    }
+
+    &__title {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 52px;
+        padding-bottom: 25px;
+    }
+
+    &__button {
+        background-color: $dark;
+        padding: 19px 50px;
+        width: 272px;
+        height: 78px;
+    }
+
+    .button-btn {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 167%;
+        text-align: center;
+        color: $dark-yell;
+    }
+
+    @media (max-width: 1024px) {
+        &__content {
+            right: calc((100vw - 988px) / 2);
+        }
+    }
+}

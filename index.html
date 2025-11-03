@@ -39,6 +39,7 @@
   </header>
 
   <main class="main">
+
     <section class="hero">
       <div class="container-fluid">
         <div class="hero__slider swiper">
@@ -58,26 +59,143 @@
           <a href="#" class="button-btn">Узнать больше</a>
         </button>
       </div>
-
-
     </section>
 
     <section class="about">
       <div class="container">
         <article class="about__content">
           <h2 class="about__title">Найт-Сити изменит тебя навсегда!</h2>
-          <p class="about__text">Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе
+          <p class="about__text"><strong>Cyberpunk 2077</strong> — приключенческая ролевая игра, действие которой
+            происходит в мегаполисе
             Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках
             устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего
             персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</p>
           <div class="about__images">
-            <img src="img/sliders/" alt="" class="about__images">
-            <img src="" alt="" class="about__images">
-            <img src="" alt="" class="about__images">
+            <div class="about__images-col-left">
+              <img src="img/about/1.jpg" alt="" class="about__images">
+              <img src="img/about/2.jpg" alt="" class="about__images">
+            </div>
+            <div class="about__images-col-right"><img src="img/about/3.jpg" alt="" class="about__images"></div>
           </div>
         </article>
       </div>
     </section>
+
+    <section class="action">
+      <img src="img/action/back-top.png" alt="" class="action__background-top">
+      <div class="container">
+        <div class="action__container">
+          <div class="action__content-text">
+            <h2 class="action__title">Играй и выигрывай!</h2>
+            <p class="action__text">Играй в <strong>Cyberpunk 2077</strong> и получи возможность выиграть консоль
+              <strong>Xbox Series X</strong> или <strong>Sony
+                PlayStation 5</strong>! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
+              подведены 1
+              февраля. Удачи! ;)
+            </p>
+          </div>
+          <div class="action__content-form">
+            <form class="action__upload-form" action="#" method="post" enctype="multipart/form-data">
+              <input type="text" name="name" id="name" placeholder="Как тебя зовут?" required>
+              <input type="email" name="email" id="email" placeholder="Твой e-mail" required>
+
+              <div class="action__file-upload">
+                <input type="file" name="file" id="file" accept=".jpg,.png,.pdf" required>
+                <label for="file">
+                  <span class="action__file-text">Прикрепить скриншот</span>
+                  <span class="action__file-format">.jpg / .png / .pdf</span>
+                </label>
+              </div>
+
+              <button type="submit" class="action__btn">Отправить</button>
+
+              <div class="action__checkbox">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Согласен на обработку персональных данных</label>
+              </div>
+            </form>
+          </div>
+          <div class="action__image">
+          </div>
+        </div>
+      </div>
+      <img src="img/action/back-down.png" alt="" class="action__background-down">
+    </section>
+
+    <section class="promo">
+      <div class="container">
+        <div class="promo__content">
+          <div class="promo__images">
+            <div class="image-monitor"></div>
+            <img src="img/promo/promo-logo.svg" alt="" class="image-logo">
+          </div>
+          <div class="promo__content-texts">
+            <h2 class="promo__title">Полное погружение вместе с HP</h2>
+            <p class="promo__text">Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с
+              диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на
+              любые
+              события с временем отклика 1 мс и частотой в 144 Гц!</p>
+            <ul class="promo__list-items">
+              <li class="promo__list-item">Яркие насыщенные цвета</li>
+              <li class="promo__list-item">Кристальная четкость изображения
+              </li>
+              <li class="promo__list-item">Быстрые движения и плавный геймплей
+              </li>
+            </ul>
+            <button class="promo__btn">
+              <a href="#" class="button-btn">Подробнее</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="propose">
+      <div class="container-fluid">
+        <div class="propose__content">
+          <div class="propose__image">
+            <img src="img/propose/games-img.jpg" alt="">
+          </div>
+          <div class="propose__content-texts">
+            <h2 class="propose__title">Купить игру Cyberpunk 2077</h2>
+            <p class="propose__list-items-title">В комплект входит:</p>
+            <ul class="propose__list-items">
+              <li class="propose__list-item">Футляр с игровыми дисками</li>
+              <li class="propose__list-item">Футляр с кодом для загрузки игры и
+                дисками (pc)</li>
+              <li class="propose__list-item">Справочник с информацией об игровом
+                мире</li>
+            </ul>
+            <div class="propose__logos">
+              <p class="propose__logos-title">Выберите платформу:</p>
+              <div class="propose__grid">
+                <div class="propose__logo"><img src="img/propose/pc.svg" alt=""></div>
+                <div class="propose__logo"><img src="img/propose/xbox.svg" alt=""></div>
+                <div class="propose__logo"><img src="img/propose/stadia.svg" alt=""></div>
+                <div class="propose__logo"><img src="img/propose/ps4.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logos">
+            <img src="img/Logo/logo.svg" alt="" class="footer__logo">
+            <img src="img/Logo/project.png" alt="" class="footer__progect">
+          </div>
+          <div class="footer__text">
+            <p class="footer__license">Лицензия</p>
+            <p class="footer__politic">Политика конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
+    </footer>
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/sider.js"></script>

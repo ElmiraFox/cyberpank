@@ -4,3 +4,22 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin flex-l-form($gap: 35px) {
+  display: flex;
+  gap: $gap;
+  justify-content: center;
+  align-items: start;
+}
+
+@mixin flex-col($gap: 32px) {
+  display: flex;
+  gap: $gap;
+}
+
+
+
+@mixin image-pol {
+  clip-path: 
+    polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
+}

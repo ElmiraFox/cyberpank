@@ -1,7 +1,6 @@
 {
   "name": "cyberpank",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "scss": "sass scss/style.scss css/style.css --watch"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.93.2"
-  }
+  },
+  "description": ""
 }

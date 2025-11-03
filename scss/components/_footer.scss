@@ -1,0 +1,28 @@
+.footer {
+
+  &__content {
+    @include flex-c-btw;
+    padding: 13px 0;
+  }
+
+  &__logos,
+  &__text {
+    @include flex-col;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: $dark;
+  }
+
+  &__copyright {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: $light;
+    background-color: $dark;
+    text-align: center;
+    padding: 13px 0;
+  }
+
+}
