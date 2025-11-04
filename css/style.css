@@ -761,12 +761,12 @@ img {
   gap: 15px;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 40px 25px;
 }
 @media (max-width: 768px) {
   .footer__content {
     flex-direction: column;
     justify-content: center;
+    padding: 40px 40px 25px;
   }
 }
 .footer__logos {

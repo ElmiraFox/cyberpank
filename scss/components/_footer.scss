@@ -2,11 +2,11 @@
 
   &__content {
     @include flex-c-btw;
-    padding: 40px 40px 25px;
 
     @media (max-width: 768px) {
       flex-direction: column;
       justify-content: center;
+      padding: 40px 40px 25px;
     }
   }
 
