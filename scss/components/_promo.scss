@@ -15,30 +15,29 @@
         flex-direction: column;
     }
 
-    .image-monitor {
-        width: 624px;
-        height: 430px;
-        background: url(../img/promo/monitor.png);
+    &__monitor img {
+        width: 100%;
+        max-width: 624px;
+        margin-bottom: 26px;
+    }
+
+    &__logo img {
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .tablet-logo {
+        display: none;
 
         @media (max-width: 1024px) {
-            width: 460px;
-            height: 317px;
-            background: url(../img/promo/tablet/monitor.png);
+            display: block;
+            max-width: 320px;
         }
     }
 
-    .image-logo {
-        width: 540px;
-        height: 80px;
-        background: url(../img/promo/promo-logo.svg);
-        margin: auto;
-
-        @media (max-width: 1024px) {
-            width: 320px;
-            height: 230px;
-            background: url(../img/promo/tablet/promo-logo.svg);
-            margin: auto;
-        }
+    &__content-texts {
+        max-width: 50%;
     }
 
     &__title {
@@ -48,8 +47,12 @@
         color: $dark;
         margin-bottom: 25px;
 
-        @media (max-width: 480px) {
-            font-size: 27px;
+        @media (max-width: 1024px) {
+            font-size: 45px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 30px;
         }
     }
 
@@ -61,15 +64,13 @@
         color: $dark;
         margin-bottom: 25px;
 
-        @media (max-width: 480px) {
+        @media (max-width: 1024px) {
             font-size: 16px;
         }
     }
 
     &__list-items {
-        @media (max-width: 480px) {
-            margin-bottom: 40px;
-        }
+        margin-bottom: 40px;
     }
 
     &__list-item {
@@ -108,13 +109,6 @@
             background: url(../img/promo/gameplay.svg);
             margin-right: 10px;
 
-            @media (max-width: 480px) {
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            font-size: 16px;
         }
     }
 
@@ -128,5 +122,19 @@
         font-weight: 700;
         font-size: 18px;
         color: $yell;
+
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .desk-logo {
+            display: none;
+        }
+
+        &__list-item {
+            font-size: 16px;
+        }
     }
 }
