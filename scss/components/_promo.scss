@@ -38,6 +38,10 @@
 
     &__content-texts {
         max-width: 50%;
+
+        @media (max-width: 480px) {
+            max-width: 100%;
+        }
     }
 
     &__title {

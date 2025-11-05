@@ -3,16 +3,29 @@
 
     &__content {
         @include flex-col($gap: 32px);
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
     }
 
     &__image {
         width: 50%;
         max-width: 944px;
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
     }
 
     &__content-texts {
         padding: 50px 0;
         width: 50%;
+
+        @media (max-width: 480px) {
+            padding: 50px 10px;
+            width: 100%;
+        }
     }
 
     &__title {
