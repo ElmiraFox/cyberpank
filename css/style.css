@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900);
 *,
 *::before,
 *::after {
@@ -28,7 +27,7 @@ li {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .page {
@@ -54,6 +53,12 @@ img {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "Archangelsk";
+  font-weight: 400;
+  src: url(../fonts/Archangelsk-Regular.woff2) format("woff2");
+  font-style: normal;
+}
 .header {
   padding: 20px 0;
   position: absolute;
@@ -144,18 +149,23 @@ img {
   }
 }
 .hero__title {
-  font-family: "Tektur", sans-serif;
+  font-family: "Archangelsk";
   font-weight: 400;
-  font-size: 52px;
+  font-size: 62px;
   padding-bottom: 25px;
 }
 @media (max-width: 1024px) {
   .hero__title {
-    font-size: 45px;
+    font-size: 62px;
     text-align: center;
   }
 }
 @media (max-width: 768px) {
+  .hero__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
   .hero__title {
     font-size: 30px;
   }
@@ -185,19 +195,24 @@ img {
   }
 }
 .about__title {
-  font-family: "Tektur", sans-serif;
+  font-family: "Archangelsk";
   font-weight: 400;
-  font-size: 52px;
+  font-size: 62px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 @media (max-width: 1024px) {
   .about__title {
     max-width: 620px;
-    font-size: 45px;
+    font-size: 62px;
   }
 }
 @media (max-width: 768px) {
+  .about__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
   .about__title {
     font-size: 30px;
   }
@@ -230,20 +245,8 @@ img {
 }
 @media (max-width: 1024px) {
   .about__images {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 32px;
-    align-items: stretch;
+    flex-direction: column;
   }
-}
-.about__images:first-child {
-  grid-column: 1;
-  grid-row: 1;
-}
-.about__images:last-child {
-  grid-column: 2;
-  grid-row: 1/3;
 }
 @media (max-width: 480px) {
   .about__images {
@@ -275,6 +278,7 @@ img {
 
 .action {
   background-color: #000000;
+  position: relative;
 }
 .action__background-top {
   max-width: 1920px;
@@ -312,10 +316,9 @@ img {
   }
 }
 .action__title {
-  position: relative;
-  font-family: "Tektur", sans-serif;
+  font-family: "Archangelsk";
   font-weight: 400;
-  font-size: 56px;
+  font-size: 62px;
   color: #FFFFFF;
   margin-bottom: 39px;
 }
@@ -324,41 +327,40 @@ img {
   display: inline-block;
   position: relative;
   top: 27px;
-  margin-right: 32px;
   width: 132px;
   height: 132px;
-  background: url(../img/action/action.svg);
+  background: url(../img/action/action.svg) no-repeat center;
+  background-size: cover;
   margin-right: 32px;
 }
 @media (max-width: 1024px) {
   .action__title::before {
     margin-bottom: 30px;
-    margin-right: 193px;
   }
 }
 @media (max-width: 480px) {
   .action__title::before {
-    margin-right: 234px;
-  }
-}
-.action__title::before {
-  margin-right: 234px;
-}
-@media (max-width: 480px) {
-  .action__title::before {
-    top: -220px;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
   }
 }
 @media (max-width: 1024px) {
   .action__title {
-    font-size: 45px;
+    font-size: 62px;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 768px) {
   .action__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .action__title {
     font-size: 30px;
-    margin-bottom: 25px;
   }
 }
 .action__text {
@@ -607,18 +609,23 @@ img {
   }
 }
 .promo__title {
-  font-family: "Tektur", sans-serif;
+  font-family: "Archangelsk";
   font-weight: 400;
-  font-size: 60px;
+  font-size: 62px;
   color: #000000;
   margin-bottom: 25px;
 }
 @media (max-width: 1024px) {
   .promo__title {
-    font-size: 45px;
+    font-size: 62px;
   }
 }
 @media (max-width: 768px) {
+  .promo__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
   .promo__title {
     font-size: 30px;
   }
@@ -729,16 +736,26 @@ img {
   }
 }
 .propose__title {
-  font-family: "Tektur", sans-serif;
+  font-family: "Archangelsk";
   font-weight: 400;
-  font-size: 56px;
+  font-size: 62px;
   color: #FFFFFF;
   max-width: 624px;
   margin-bottom: 25px;
 }
 @media (max-width: 1024px) {
   .propose__title {
-    font-size: 45px;
+    font-size: 62px;
+  }
+}
+@media (max-width: 768px) {
+  .propose__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .propose__title {
+    font-size: 30px;
   }
 }
 .propose__list-items-title {
