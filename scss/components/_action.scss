@@ -116,22 +116,21 @@
         }
     }
 
-    &__image {
+    &__images {
+        display: flex;
+
         @media (max-width: 1024px) {
             grid-column: 2;
             grid-row: 1 / 3;
             align-content: center;
+            flex-direction: column;
         }
 
         @media (max-width: 480px) {
             grid-column: 1;
             grid-row: 1;
+            flex-direction: row;
         }
-    }
-
-    &__tablet,
-    &__mobi {
-        display: none;
     }
 
     &__upload-form {

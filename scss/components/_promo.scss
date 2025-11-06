@@ -120,12 +120,9 @@
         }
     }
 
-    &__btn {
+    .button-btn {
         background-color: $dark;
         padding: 19px 50px;
-    }
-
-    .button-btn {
         font-family: $font-family;
         font-weight: 700;
         font-size: 18px;
