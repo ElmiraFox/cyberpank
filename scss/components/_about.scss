@@ -75,6 +75,19 @@
         }
     }
 
+    &__images-col-right {
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &__images-col-mobi-right {
+        display: none;
+        @media (max-width: 480px) {
+            display: block;
+        }
+    }
+
     img {
         width: 100%;
         height: 100%;
