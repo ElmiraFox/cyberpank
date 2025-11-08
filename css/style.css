@@ -395,6 +395,9 @@ img {
   font-weight: 700;
   color: #52BEDC;
 }
+.action__content-form {
+  width: 80%;
+}
 @media (max-width: 1024px) {
   .action__content-form {
     grid-column: 1;
@@ -408,21 +411,67 @@ img {
   }
 }
 .action__images {
+  position: relative;
   display: flex;
   margin: auto;
+  width: 100%;
+  max-width: 70%;
+  height: 100%;
 }
 @media (max-width: 1024px) {
   .action__images {
     grid-column: 2;
     grid-row: 1/3;
-    flex-direction: column;
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {
   .action__images {
+    flex-direction: row-reverse;
+    padding: 50px 0 0;
     grid-column: 1;
     grid-row: 1;
-    flex-direction: row;
+    max-width: 100%;
+  }
+}
+.action__image-left {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .action__image-left {
+    top: 5%;
+    left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .action__image-left {
+    top: 15%;
+    left: 0;
+  }
+}
+@media (max-width: 4800px) {
+  .action__image-left {
+    width: 100%;
+  }
+}
+.action__image-right {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .action__image-right {
+    top: 50%;
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .action__image-right {
+    width: 100%;
   }
 }
 .action__upload-form {
@@ -557,25 +606,6 @@ img {
 }
 .action__checkbox label {
   cursor: pointer;
-}
-@media (max-width: 1024px) {
-  .action__desc, .action__mobi {
-    display: none;
-  }
-  .action__tablet {
-    display: block;
-  }
-}
-@media (max-width: 480px) {
-  .action__desc, .action__tablet {
-    display: none;
-  }
-  .action__mobi {
-    display: block;
-    padding: 70px 0 0;
-    width: 100%;
-    max-width: 296px;
-  }
 }
 
 .promo {
